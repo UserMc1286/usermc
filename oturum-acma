@@ -1,0 +1,28 @@
+using System;
+using System.Text;
+#UserMc tarafından yazıldı
+namespace UserMc
+{
+class Program
+	{
+	static void Main(string[] args)
+		{
+
+Console.Write("Hoşgeldin, Lütfen Hesap Aç\nAd Soyad: ");
+string ad=Console.ReadLine();
+Console.Write("Parola: ");
+string psw=Console.ReadLine();
+
+Console.Write("Hesap açıldı, giriş yap\nAd Soyad: ");
+string add=Console.ReadLine();
+Console.Write("Parola: ");
+string psww=Console.ReadLine();
+
+if (add==ad && psww==psw){
+	Console.Write("Hoşgeldin {0} , Oturumun açılıyor...", ad);
+}
+if (add!=ad || psww!=psw){
+	Console.Write("Ad Soyad veya Parola yanlış!");
+}
+
+}}}
